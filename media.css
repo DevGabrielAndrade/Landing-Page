@@ -7,22 +7,26 @@
     main {
         flex-direction: column;
         padding: 20px;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
     }
 
     #title {
         text-align: center;
     }
-    p{
+
+    p {
         font-size: 14px;
     }
 
-    article, aside {
-        margin: 20px 0;
-        margin-right: 80px;
-        width: 100%;
+    article {
+        display: none; /* Ocultar o artigo no modo celular para economizar espaço */
     }
-    img{
-        display: none;
+
+    aside {
+        margin: 20px auto; /* Centraliza o aside horizontalmente */
+        width: 90%; /* Define a largura do aside para 90% do container */
     }
 
     h2 {
@@ -30,7 +34,7 @@
     }
 
     form {
-        width: 80%;
+        width: 100%; /* Altera a largura do formulário para 100% */
         margin: 0 auto;
     }
 
@@ -38,5 +42,16 @@
     input[type="email"],
     input[type="submit"] {
         width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    ul a {
+        display: block;
+        margin: 10px 0;
+        text-align: center; /* Centraliza os links do cabeçalho */
     }
 }
