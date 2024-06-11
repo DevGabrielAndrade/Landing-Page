@@ -1,212 +1,220 @@
-    @charset "UFT-8";
+@charset "UTF-8";
 
-    @font-face {
-        font-family: 'poppinsblack';
-        src: url('components/fonts/poppins-black-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-black-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('components/fonts/poppins-black-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    }
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('components/fonts/poppins-bold-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'poppinslight';
+    src: url('components/fonts/poppins-light-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('components/fonts/poppins-medium-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('components/fonts/poppins-regular-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'poppinsbold';
-        src: url('components/fonts/poppins-bold-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('components/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+        url('components/fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    }
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #1c78e0;
+    color: #0257b8;
+    font-family: 'poppinsregular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
 
+main {
+    background-color: white;
+    width: 80%;
+    max-width: 1200px;
+    padding: 40px;
+    margin: 25px 20px 0;
+    border-radius: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; 
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-    @font-face {
-        font-family: 'poppinslight';
-        src: url('components/fonts/poppins-light-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-light-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+#title {
+    flex-direction: column;
+    line-height: 15px;
+    font-size: 1.7em;
+}
 
-    }
+a {
+    text-decoration: none;
+    font-size: 1.08em;
+    font-family: 'poppinssemibold';
+    display: inline-block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
 
+a:hover {
+    color: #000716;
+    transform: scale(1.07); 
+}
 
+li {
+    color: inherit;
+    display: inline-block;
+    margin: 7px;
+}
 
+#ini {
+    border: 2px solid #000716;
+    padding: 10px;
+    border-radius: 12px;
+}
 
-    @font-face {
-        font-family: 'poppinsmedium';
-        src: url('components/fonts/poppins-medium-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-medium-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+#ini:hover {
+    color: white;
+    background-color: #0257b8;
+}
 
-    }
+h1 {
+    font-weight: 600;
+    text-align: end;
+}
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-grow: 1;
+}
 
+aside {
+    background-color: #1a72d669;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+h2 {
+    font-family: 'poppinsmedium';
+    line-height: 15px;
+    text-align: center;
+    font-size: 1.8em;
+}
 
-    @font-face {
-        font-family: 'poppinsregular';
-        src: url('components/fonts/poppins-regular-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+span {
+    color: #000716;
+}
 
-    }
+article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
+p {
+    line-height: 1.5;
+    font-family: 'poppinslight';
+    text-align: justify;
+    font-size: 1.09em;
+    font-weight: 700;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+}
 
-    @font-face {
-        font-family: 'poppinssemibold';
-        src: url('components/fonts/poppins-semibold-webfont.woff2') format('woff2'),
-            url('components/fonts/poppins-semibold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+form input[type="submit"] {
+    height: 50px;
+    background-color: #0257b8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 60%;
+}
 
-    }
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
 
-    body{
-        background-color: #1c78e0;
-        color: #0257b8;
-        font-family: 'poppinsregular';
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    main{
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        padding: 40px;
-        margin-top: 75px;
-        border-radius: 20px;
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.08em;
+}
 
-    }
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    #title{
-        flex-direction: column;
-        line-height: 15px;
-        font-size: 2em;
-    }
-    a {
-        text-decoration: none;
-        font-size: 1.18em;
-        font-family: 'poppinssemibold';
-        display: inline-block;
-        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-
-    a:hover {
-        color: #000716;
-        transform: scale(1.07); 
-    }
-    li{
-        color: inherit;
-        display: inline-block;
-        margin: 14px;
-    }
-    #ini{
-        border: 2px solid #000716;
-        padding: 10px;
-        border-radius: 12px;
-    }
-    #ini:hover{
-        color:white ;
-        background-color: #0257b8;
-    }
-    h1{
-        font-weight: 600;
-        text-align: end ;
-    }
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    aside{
-        background-color: #1a72d669;
-        flex: 1;
-        margin-right: 20px;
-        border-radius: 15px;
-
-    }
-    h2{
-        font-family: 'poppinsmedium';
-        line-height: 15px;
-        text-align: center;
-        font-size: 1.8em;
-
-    }
-    span{
-        color: #000716;
-    }
-    article {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    article img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    p{
-        line-height: 20px;
-        max-width: 500px;
-        font-family: 'poppinslight';
-        text-align: justify;
-        margin-left: 15px;
-        font-size: 1.09em;
-        font-weight: 700;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        margin-left: 115px;
-    }
-    form input[type="submit"] {
-        height: 50px;
-        width: 50%;
-        background-color: #0257b8;
-        color: white;
-        font-weight: bold;
-    }
-
-
-    form input[type="submit"]:hover{
-        cursor: pointer;
-    }
-    input{
-        margin-top: 20px;
-        height: 20px;
-        padding: 15px;
-        border-radius: 20px;
-        border: none;
-        font-size: 1.08em;
-    }
-    footer {
-        background-color: #1c78e0;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        font-family: 'poppinsregular';
-    }
+footer {
+    background-color: #1c78e0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-family: 'poppinsregular';
+}

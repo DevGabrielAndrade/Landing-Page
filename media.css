@@ -12,9 +12,17 @@
     #title {
         text-align: center;
     }
+    p{
+        font-size: 14px;
+    }
 
     article, aside {
         margin: 20px 0;
+        margin-right: 80px;
+        width: 100%;
+    }
+    img{
+        display: none;
     }
 
     h2 {
