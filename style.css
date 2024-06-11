@@ -83,8 +83,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     width: 100%;
+    margin-top: -35px;
 }
 
 #title {
@@ -139,9 +140,10 @@ h1 {
 aside {
     background-color: #1a72d669;
     flex: 1;
+    margin-top: -25px;
     margin-right: 20px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
